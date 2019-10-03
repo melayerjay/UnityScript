@@ -7,6 +7,7 @@ public class CubeRotation : MonoBehaviour
     Quaternion rot;
     Quaternion finalrot;
     public float speed;
+    public Transform pos1,pos2;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,19 +22,19 @@ public class CubeRotation : MonoBehaviour
         // this.transform.rotation = Quaternion.RotateTowards(this.transform.rotation,finalrot,speed * Time.deltaTime);
         //this.transform.rotation = Quaternion.Lerp(this.transform.rotation,Quaternion.identity,speed * Time.deltaTime);
 
-        float MouseX = Input.GetAxis("Mouse X");
-        float MouseY = Input.GetAxis("Mouse Y");
+        // float MouseX = Input.GetAxis("Mouse X");
+        // float MouseY = Input.GetAxis("Mouse Y");
 
-        Vector3 temp = this.transform.localEulerAngles;
-        temp.y += MouseX * 2;
-        temp.x += MouseY *2;
-        //this.transform.localEulerAngles = temp;
+        // Vector3 temp = this.transform.localEulerAngles;
+        // temp.y += MouseX * 2;
+        // temp.x += MouseY *2;
+        // //this.transform.localEulerAngles = temp;
 
-        //transform.Rotate(Vector3.up);
-        //transform.RotateAround(Vector3.zero,Vector3.right,speed * Time.deltaTime);
+        // //transform.Rotate(Vector3.up);
+        // //transform.RotateAround(Vector3.zero,Vector3.right,speed * Time.deltaTime);
 
-        transform.Translate(Vector3.right * speed * Time.deltaTime);
+        // transform.Translate(Vector3.right * speed * Time.deltaTime);
 
-        
+
     }
 }
