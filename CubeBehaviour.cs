@@ -11,7 +11,7 @@ public class CubeBehaviour : MonoBehaviour
     void Start()
     {
         //this.gameObject.SetActive(false);
-        rg = this.GetComponentInChildren<Rigidbody>();
+        rg = this.GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -28,8 +28,8 @@ public class CubeBehaviour : MonoBehaviour
         //     //Addforce
         //     rg.AddForce(Vector3.right * 20f);
         // }
-        if(horizontalMovement > 0 || horizontalMovement < 0){
-            rg.AddForce(Vector3.right * 200f * horizontalMovement);
-        }
+        // if(horizontalMovement > 0 || horizontalMovement < 0){
+        //     rg.AddForce(Vector3.right * 200f * horizontalMovement);
+        // }
     }
 }
